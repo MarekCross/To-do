@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  header {
+    background-image: url(bgd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+    background-color: #9a4c79;
+    overflow: hidden;
+    position: relative;
+    h1 {
+      color: white;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 3vh;
+      font-size: 55px;
+    }
+  }
+
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    .add_to_list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .add_input {
+        display: block;
+        width: 28vw;
+        height: 35px;
+        margin: 20px 20px;
+        font-size: 30px;
+        border-radius: 15px;
+        color: hsl(0, 1%, 74%);
+        padding-left: 10px;
+      }
+      .when_input {
+        display: block;
+        width: 13vw;
+        height: 35px;
+        margin: 20px 20px;
+        margin-left: 5px;
+        font-size: 30px;
+        border-radius: 15px;
+        color: hsl(0, 1%, 74%);
+        padding-left: 10px;
+      }
+
+      .add_button {
+        height: 42px;
+        width: 100px;
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 15px;
+        background-color: white;
+      }
+      .add_button:hover {
+        background-color: #e9d2eb;
+        transition: 0.4s ease-in;
+      }
+    }
+
+    .list {
+      border-top: solid 5px #c258b0;
+      border-bottom: solid 5px #ba54a9;
+      background-color: #c98ece;
+      min-width: 53vw;
+      max-width: 90vw;
+      height: auto;
+      margin: 20px 0;
+      border-radius: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      .to-do-start {
+        color: white;
+        font-size: 35px;
+        text-align: center;
+      }
+      .thing_to_do {
+        background-color: none;
+        width: 90%;
+        height: 50px;
+        border: white solid 3px;
+        margin: 10px;
+        padding: 0 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        i {
+          display: inline-block;
+          color: white;
+          font-size: 30px;
+          padding: 0 10px;
+        }
+        .fa-trash-can:hover {
+          color: rgb(251, 76, 76);
+          transition: 0.3s ease-in;
+        }
+
+        .text_to_do {
+          display: inline-block;
+          margin: 0 30px;
+          color: white;
+          font-size: 30px;
+          margin: auto 0;
+        }
+      }
+    }
+  }
+}
+.delete_element {
+  background-color: rgb(103, 70, 105);
+  transition: 0.4 ease-in;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  background-color: #bd83c2;
+  text-align: center;
+  width: 100%;
+}
+.finder {
+  display: flex;
+  flex-direction: row;
+  .finder_input {
+    display: block;
+    width: 28vw;
+    height: 35px;
+    margin: 20px 20px;
+    font-size: 30px;
+    border-radius: 15px;
+    color: hsl(0, 1%, 74%);
+    padding-left: 10px;
+  }
+  .finder_input_button {
+    height: 42px;
+    width: 100px;
+    margin: 20px 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 15px;
+    background-color: white;
+  }
+}
+.finder_p {
+  font-size: 30px;
+  text-align: center;
+}
+.display_none {
+  display: none;
+}
